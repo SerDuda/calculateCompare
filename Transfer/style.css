@@ -1,0 +1,43 @@
+.slider-transfer {
+    position: relative;
+    width: 320px;
+    height: 20px;
+    border-radius: 8px;
+}
+
+output {
+    position: absolute;
+    top: -14px;
+    padding: 7px 10px;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+#transfer {
+    position: relative;
+    width: 200px;
+    height: 7px;
+    left: 5px;
+    background: rgb(41, 168, 2);
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#transfer::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 65%;
+    background: rgb(4, 0, 255);
+    box-shadow: 0 0 10px 4px rgb(0, 38, 255);
+    cursor: pointer;
+}
+
+.transfer {
+    font-weight: bold;
+    font-size: 20px;
+}

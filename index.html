@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Storage/style.css">
+    <link rel="stylesheet" href="./Transfer/style.css">
+    <title>Calculate Task</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="main-items">
+            <div class="backblaze">
+                <div class="backblaze__title">Backblaze</div>
+                <img src="./images/backblaze.png" alt="" class="backblaze__img">
+                <div id="backblaze-bar" class="backblaze-bar">
+                    <div id="backblaze-bar__value"></div>
+                </div>
+                <span id="total-price__backblaze">7</span>
+            </div>
+            <div class="bunny">
+                <div class="bunny__title">Buuny</div>
+                <span class="bunny-hdd"><input type="radio" id="bunny-hdd" name="bunny" value="0.01" checked="true">HDD</span>
+                <span class="bunny-sdd"><input type="radio" id="bunny-sdd" name="bunny" value="0.02">SDD</span>
+                <img src="./icon/bunny.svg" alt="" class="bunny__img">
+                <div id="bunny-bar" class="bunny-bar">
+                    <div id="bunny-bar__value"></div>
+                </div>
+                <span id="total-price__bunny">0</span>
+            </div>
+            <div class="scaleway">
+                <div class="scaleway__title">Scaleway</div>
+                <span class="scaleway-multi">Multi<input type="radio" id="scaleway-multi" name="scaleway" value="0.06" checked="true"></span>
+                <span class="scaleway-single">Single<input type="radio" id="scaleway-single" name="scaleway" value="0.03"></span>
+                <img src="./icon/scaleway.svg" alt="" class="scaleway__img">
+                <div id="scaleway-bar" class="scaleway-bar">
+                    <div id="scaleway-bar__value"></div>
+                </div>
+                <span id="total-price__scaleway">0</span>
+            </div>
+            <div class="vultr">
+                <div class="vultr__title">Vultr</div>
+                <img src="./images/vultr.png" alt="" class="vultr__img">
+                <div id="vultr-bar" class="vultr-bar">
+                    <div id="vultr-bar__value"></div>
+                </div>
+                <span id="total-price__vultr">5</span>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slider-storage">
+                <label for="storage" class="storage">Storage</label>
+                <input type="range" name="storage" id="storage" min="0" max="1000" step="1" value="0">
+                <output for="storage" id="volueStorage">0</output>
+            </div>
+            <div class="slider-transfer">
+                <label for="transfer" class="transfer">Transfer</label>
+                <input type="range" name="transfer" id="transfer" min="0" max="1000" step="1" value="0">
+                <output for="transfer" id="volueTransfer">0</output>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
